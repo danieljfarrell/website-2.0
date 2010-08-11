@@ -1,79 +1,113 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
-
+"http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="description" content="Description of Daniel J Farrell's research at Imperial College London" />
-    <meta name="keywords" content="physics photovoltaics solar cells energy luminescent concentrators hot-carriers PV building integrated" />
-    <meta name="author" content="Daniel J Farrell" />
-    <title>Daniel J Farrell</title>
-
-  <!-- Framework CSS -->
-  <link rel="stylesheet" href="../blueprint/screen.css" type="text/css" media="screen, projection">
-  <link rel="stylesheet" href="../blueprint/print.css" type="text/css" media="print">
-  <!--[if IE]><link rel="stylesheet" href="../../blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-  <!-- Import fancy-type plugin  -->
-  <link rel="stylesheet" href="../blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
-  <link rel="stylesheet" href="../blueprint/plugins/navigation/sliding.css" type="text/css" media="screen, projection" />
-    
-</head>
-
-<body>
-    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="Description of Daniel J Farrell's research at Imperial College London">
+        <meta name="keywords" content="physics photovoltaics solar cells energy luminescent concentrators hot-carriers PV building integrated">
+        <meta name="author" content="Daniel J Farrell">
+        <title>
+            Daniel J Farrell
+        </title><!-- Framework CSS -->
+        <link rel="stylesheet" href="../blueprint/screen.css" type="text/css" media="screen, projection">
+        <link rel="stylesheet" href="../blueprint/print.css" type="text/css" media="print"><!--[if IE]><link rel="stylesheet" href="../../blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+        <!-- Import fancy-type plugin  -->
+        <link rel="stylesheet" href="../blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+        <link rel="stylesheet" href="../blueprint/plugins/navigation/sliding.css" type="text/css" media="screen, projection">
+    </head>
+    <body>
         <hr class="space">
-        
-    <div class="container">
-
-        <div class="span-21 header">
+        <div class="container">
+            <div class="span-21 header">
+                <div class="span-6">
+                    <h1 class="light">
+                        Daniel J Farrell
+                    </h1>
+                </div>
+                <div class="push-1 span-13">
+                    <ul class="green">
+                        <li class="green">
+                            <a href="../" title="home"><span>home</span></a>
+                        </li>
+                        <li class="green">
+                            <a href="../research/" title="research"><span>research</span></a>
+                        </li>
+                        <li class="green">
+                            <a href="#" title="freebies" class="current"><span>freebies</span></a>
+                        </li>
+                        <li class="green">
+                            <a href="../contact/" title="contact"><span>contact</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="space">
             
-            <div class="span-6">
-            <h1 class="light">Daniel J Farrell</h1>
+            <!-- Body -->
+            <div class="span-13 colborder">
+                <h3>
+                    Freebies — everyone likes freebies!
+                </h3>
+                <p>
+                    A collection of interesting things related to photovoltaics and my research.
+                </p>
+                <hr class="space">
+                
+                <h5>PVTrace</h5>
+                <div class="span-6">
+                    
+                    <a href="pvtrace/"><img src="pvtrace/pvtrace.jpg" width="200" class="push-0 " alt="pvtrace: optical monte-carlo simulation of luminescent photovoltaic devices."></a>
+                    <p class="pcaption">
+                        PVTrace: Optical monte-carlo simulation of luminescent photovoltaic devices
+                    </p>
+                </div>
+                <p>
+                    <strong>PVTrace</strong> will soon become open-source software for academic use. PVTrace can be licensed for commercial applications or I can be hired for consulting projects. Interested in knowing more, <a href="../contact/"> get in contact</a>.
+                </p>
+                
+                <hr class="">
+                
+                <h5>Quantum of Sol</h5>
+                
+                <div class="span-6">
+                    <a href="quantumofsol/"><img src="qos.png" width="200" class="push-0 " alt="Quantum of Sol: the next generation of solar cells in a WebApp."></a>
+                    <p class="pcaption">
+                        Quantum of Sol: Now a Webapp!
+                    </p>
+                </div>
+                <p>
+                    <strong>Quantum of Sol</strong> was our highly successful outreach adventure at the prestigious <a href="http://royalsociety.org/quantum-of-sol---the-next-generation-of-solar-cells/">Royal Summer Science Exhibition 2009</a>. Imperial College Physic students Matthias Kraft and Aidan Taylor joined me for their summer research project 2010 and made a <a href="quantumofsol/">Web app</a> to explained solar energy conversion. Their work illustrates the current/voltage trade off with conversional solar cells, and highlights how this can be circumvented by using the hot-carrier approach.
+                </p>
+                
+                 <hr class="">
+                
+                                
+                <h5>pydaq</h5>
+                
+                <div class="span-5 append-1">
+                    <img src="DAQ.png" width="200" class="push-0" alt="Python software to control the analogue ports of National instruments DAQ 6008.">
+                    <p class="pcaption">
+                        Python control of USB NI-DAQ.
+                    </p>
+                </div>
+                <p>
+                    <strong>National instruments</strong> make a very versatile USB Data Acquisition (DAQ) box. Let's face it, using the NI C API and programming on Windows are not the most inspiring tasks. I wrote a small python class that makes using this DAQ on Windows a bit more fun! You can find the pydaq project <a href="http://github.com/danieljfarrell/pydaq"> here on github.com</a>. It makes it simple to access the current and voltage values on any of the port:
+                    
+                    <div class="span-6">
+                    <script src="http://gist.github.com/518737.js?file=gistfile1.py"></script>
+                    </div>
+                </p>
+                
+                
             </div>
-        
-            <div class="push-1 span-13">
-                <ul class="green">
-                	<li class="green"><a href="../index.html" title="home" ><span>home</span></a></li>
-                    <li class="green"><a href="../research/index.html" title="research"><span>research</span></a></li>
-                    <li class="green"><a href="index.html" title="freebies" class="current"><span>freebies</span></a></li>
-                    <li class="green" ><a href="../contact/index.html" title="contact"><span>contact</span></a></li>
-                </ul>
-            </div>
-        
+            
+        <div>
+        <h3><span class="alt">Follow me here...</span></h3>
+        <a href="http://twitter.com/danieljfarrell"> <img src="../img/twitter.jpg" width="35"/></a>
+        <a href="http://linkedin.com/in/danieljfarrell"> <img src="../img/linkedin.jpg" width="33"/></a>
+        <a href="http://www.mendeley.com/profiles/daniel-farrell/"><img border="0" src="http://www.mendeley.com/embed/icon/1/blue/small" alt="Daniel Farrell's bibliography"/></a>
         </div>
         
-        <hr class="space">
-        
-        <!-- Body -->
-        <div class="span-21 ">
-            
-            <h3>Freebies &mdash; everyone likes freebies! </h3>
-
-            
-            <p>A collection of interesting things related to photovoltaics and my research.</p>
-            
-            <hr class="space">
-            
-            <div class="span-6">
-            <a href="pvtrace/index.html"><img src="pvtrace/pvtrace.jpg" width="230" class="push-0 shadow" alt="pvtrace: optical monte-carlo simulation of luminescent photovoltaic devices."></a><p class="pcaption">PVTrace: Optical monte-carlo simulation of luminescent photovoltaic devices</p>
-            <hr class="space">
-            <p><strong>PVTrace</strong> is become open-source for the benefit of the PV community! PVTrace can be licensed for commercial work or consulting projects. Become a developer soon...</p>
-            </div>
-            
-            <div class="span-6 push-1">
-            <a href="quantumofsol/index.html"><img src="qos.png" width="230" class="push-0 shadow" alt="Quantum of Sol: the next generation of solar cells in a WebApp."></a><p class="pcaption">Quantum of Sol: Now a Webapp!</p>
-            <hr class="space">
-            <hr class="space">
-            <p><strong>Quantum of Sol</strong> was our highly successful outreach adventure at prestigious <a href="http://royalsociety.org/quantum-of-sol---the-next-generation-of-solar-cells/">Royal Summer Science Exhibition 2009</a>. First year summer project students Matthias Kraft and Aidan Taylor joined the research group to make a webapp that describes the losses in a Shockley-Queisser solar and how they can be overcome by moving to advanced PV concepts such at hot-carriers.</p>
-                        
-            </div>
-            
-            
-            
         </div>
-
-
-    </div>
-
-</body>
+    </body>
 </html>
