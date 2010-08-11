@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Description of Daniel J Farrell's research at Imperial College London" />
+    <meta name="keywords" content="physics photovoltaics solar cells energy luminescent concentrators hot-carriers PV building integrated" />
+    <meta name="author" content="Daniel J Farrell" />
+    <title>Daniel J Farrell</title>
+
+  <!-- Framework CSS -->
+  <link rel="stylesheet" href="../../blueprint/screen.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="../../blueprint/print.css" type="text/css" media="print">
+  <!--[if IE]><link rel="stylesheet" href="../../blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+  <!-- Import fancy-type plugin  -->
+  <link rel="stylesheet" href="../../blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="../../blueprint/plugins/navigation/sliding.css" type="text/css" media="screen, projection" />
+    
+</head>
+
+<body>
+    
+        <hr class="space">
+        
+    <div class="container">
+
+        <div class="span-21 header">
+            
+            <div class="span-6">
+            <h1 class="light">Daniel J Farrell</h1>
+            </div>
+        
+            <div class="push-1 span-13">
+                <ul class="green">
+                	<li class="green"><a href="../../index.html" title="home" ><span>home</span></a></li>
+                    <li class="green"><a href="../../research/index.html" title="research"><span>research</span></a></li>
+                    <li class="green"><a href="../index.html" title="freebies" class="current"><span>freebies</span></a></li>
+                    <li class="green" ><a href="../../contact/index.html" title="contact"><span>contact</span></a></li>
+                </ul>
+            </div>
+        
+        </div>
+        
+        <hr class="space">
+        
+        <!-- Body -->
+        <div class="span-12 colborder">
+            
+            <h3>PVTrace</h3>
+
+            <h3 class="alt">Optical monte-carlo simulation of luminescent photovoltaic devices</h3>
+              
+
+            
+            <p>PVTrace builds on over 3 years of research and development of Monte-Carlo simulation codes at Imperial College. It is the latest version of my luminescent concentrator simulation software and brings together some advanced concepts including:</p>
+                <ul>
+                    <li><a href="http://en.wikipedia.org/wiki/Constructive_solid_geometry">Constructive Solid Geometry</a></li>
+                    
+                    <li>Generalised 3D ray intersections (ray optics):
+                        <ul>
+                            <li>ray-box</li>
+                            <li>ray-cylinder</li>
+                            <li>ray-CSG object</li>
+                        </ul></li>
+                    
+                    <li>Arbitrary 3D object transformations:
+                        <ul>
+                            <li>translation</li>
+                            <li>rotation</li>
+                            <li>scaling and skewing</li>
+                        </ul></li>
+                        
+                    <li>Photon path visualiser</li>
+                    
+                    <li>Statistical collection of photonic properties:
+                        <ul>
+                            <li>wavelength</li>
+                            <li>direction</li>
+                            <li>polarisation (no appear soon)</li>
+                        </ul></li>
+                    <li>Fresnel reflection and refraction</li>
+                    <li>Sampling from overlapping statistical distributions.</li>
+                    </ul>
+                
+                <p>The complex solid geometry feature means that we are no limited to simulation of primitive shapes. Any shape that can be made using a union, difference or intersection operation can be made. In principle any shape can be simulated.</p>
+                
+                <p>PVTrace is entirely written in Python. Using the <a href="http://numpy.scipy.org">numpy</a> and <a href="http://www.scipy.org">scipy</a> libraries. The philosophy here is to use a programming language that allows for rapid development rather than speed of execution. On a single core machine PVTrace only takes a few minutes to produce sensible results which for me is an acceptable trade-off considering the pleasure it is to write and debug in Python!</p>
+        </div>
+
+        <!-- Column -->
+        <div class="span-6 last">
+            <div class="success">
+                <strong>PVTrace</strong> is become open-source for the benefit of the PV community! PVTrace can be licensed for commercial work or consulting projects. Become a developer soon...
+            </div>
+            
+            <hr class="space">
+            <hr class="space">
+ 
+            <div>
+             <a href="pvtrace.jpg"><img src="pvtrace.jpg" width="230" class="push-0 shadow" alt="pvtrace: optical monte-carlo simulation of luminescent photovoltaic devices."></a><p class="pcaption">Screenshot of pvtrace running.</p>
+             </div>
+             
+             <hr class="space">
+             <hr class="space">
+             
+             <div>
+             <img src="http://upload.wikimedia.org/wikipedia/commons/8/8b/Csg_tree.png" width="240" class="push-0 shadow" alt="Constructive solid geometry. "><p class="pcaption">Constructive solid geometry operations.</p>
+             </div>
+             
+        </div>
+
+    </div>
+
+</body>
+</html>

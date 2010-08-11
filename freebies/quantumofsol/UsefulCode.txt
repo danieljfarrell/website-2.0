@@ -1,0 +1,50 @@
+var HUDPanel = [[CPPanel alloc] 
+		initWithContentRect:CGRectMake(0,100, 1400, 700)
+		styleMask:CPHUDBackgroundWindowMask];
+		[HUDPanel setFloatingPanel:YES];
+
+		[HUDPanel orderFront:self];
+		
+		
+	var ControlPanel = [[CPPanel alloc] 
+		initWithContentRect:CGRectMake(0,100, 100, 200)
+		styleMask:CPHUDBackgroundWindowMask| CPClosableWindowMask];
+		[HUDPanel setFloatingPanel:NO];
+
+		[HUDPanel orderFront:self];
+		
+	var panelContentView = [HUDPanel contentView],
+		centerX = (CGRectGetWidth([panelContentView bounds]) - 135.0) / 2.0;
+		
+		
+	Colours
+	
+	setBackgroundColor:[CPColor blackColor]
+	
+	Labels
+	
+	var scaleStartLabel = [self labelWithTitle:"50%"],
+    scaleEndLabel = [self labelWithTitle:"150%"];
+
+[scaleStartLabel setFrameOrigin:CGPointMake(
+    centerX - CGRectGetWidth([scaleStartLabel frame]), 10)];
+[scaleEndLabel setFrameOrigin:
+    CGPointMake(CGRectGetMaxX([scaleSlider frame]), 10)];
+
+	
+	- (CPTextField)labelWithTitle:(CPString)aTitle
+{
+    var label = [[CPTextField alloc] initWithFrame:CGRectMakeZero()];
+    
+    [label setStringValue:aTitle];
+    [label setTextColor:[CPColor whiteColor]];
+    
+    [label sizeToFit];
+
+    return label;
+}
+
+ [HUDPanel setTitle:"Inspector"];
+ 
+ [button setTarget:self];
+	[button setAction:@selector(swap:)]; 
